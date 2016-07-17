@@ -34,7 +34,7 @@ const languageUnderstanding = ({
             },
             "parameters": [
                 {
-                    "name": "applicationId",
+                    "name": "id",
                     "description": "Id for the application\n",
                     "value": null,
                     "options": [],
@@ -63,13 +63,19 @@ const languageUnderstanding = ({
             ]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return new Promise((resolve, reject) => {
+            verifyParameters(operation, parameters)
+                .then(makeRequest({
+                    operation,
+                    parameters,
+                    body,
+                    API_KEY
+                }).then((response) => {
+                    resolve(response);
+                }).catch((err) => {
+                    reject(err);
+                }));
+        });
     };
 
     self.addApp = ({

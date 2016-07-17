@@ -49,13 +49,19 @@ const textAnalytics = ({
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return new Promise((resolve, reject) => {
+            verifyParameters(operation, parameters)
+                .then(makeRequest({
+                    operation,
+                    parameters,
+                    body,
+                    API_KEY
+                }).then((response) => {
+                    resolve(response);
+                }).catch((err) => {
+                    reject(err);
+                }));
+        });
 
     };
     /**
@@ -111,13 +117,19 @@ const textAnalytics = ({
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return new Promise((resolve, reject) => {
+            verifyParameters(operation, parameters)
+                .then(makeRequest({
+                    operation,
+                    parameters,
+                    body,
+                    API_KEY
+                }).then((response) => {
+                    resolve(response);
+                }).catch((err) => {
+                    reject(err);
+                }));
+        });
 
     };
     /**
@@ -150,13 +162,19 @@ const textAnalytics = ({
             "parameters": []
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return new Promise((resolve, reject) => {
+            verifyParameters(operation, parameters)
+                .then(makeRequest({
+                    operation,
+                    parameters,
+                    body,
+                    API_KEY
+                }).then((response) => {
+                    resolve(response);
+                }).catch((err) => {
+                    reject(err);
+                }));
+        });
 
     };
     /**
@@ -236,13 +254,19 @@ const textAnalytics = ({
             "parameters": []
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return new Promise((resolve, reject) => {
+            verifyParameters(operation, parameters)
+                .then(makeRequest({
+                    operation,
+                    parameters,
+                    body,
+                    API_KEY
+                }).then((response) => {
+                    resolve(response);
+                }).catch((err) => {
+                    reject(err);
+                }));
+        });
 
     };
 
