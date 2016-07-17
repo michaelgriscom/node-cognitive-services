@@ -17,6 +17,7 @@
   ],
   "repository": "https://github.com/joshbalfour/node-cognitive-services",
   "dependencies": {
-    "request-promise": "^3.0.0"
+    "request-promise": "^4.0.0",
+    "request": "^2.73.0"
   }
 }

@@ -10,6 +10,7 @@ module.exports = {
     emotion: require('./emotion'),
     entityLinking: require('./entityLinking'),
     face: require('./face'),
+    languageUnderstanding: require('./languageUnderstanding'),
     recommendations: require('./recommendations'),
     speakerRecognition: require('./speakerRecognition'),
     textAnalytics: require('./textAnalytics'),
