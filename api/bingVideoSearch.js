@@ -1,6 +1,5 @@
 const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../lib/api');
 
 const bingVideoSearch = ({
@@ -93,13 +92,12 @@ const bingVideoSearch = ({
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -128,13 +126,12 @@ const bingVideoSearch = ({
             "parameters": []
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
 

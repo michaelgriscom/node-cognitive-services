@@ -1,6 +1,5 @@
 ﻿const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../../lib/api');
 
 const features = ({

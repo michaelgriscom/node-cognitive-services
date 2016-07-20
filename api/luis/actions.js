@@ -1,6 +1,5 @@
 ﻿const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../../lib/api');
 
 const actions = ({
@@ -11,4 +10,4 @@ const actions = ({
     return self;
 };
 
-module.exports = apps;
+module.exports = actions;

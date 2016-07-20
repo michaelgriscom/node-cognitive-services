@@ -1,6 +1,5 @@
 ﻿const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../../lib/api');
 
 const apps = ({
@@ -9,26 +8,7 @@ const apps = ({
 
     let self = this;
 
-    /*
-   Sample body
-   {
- "ID": "string",
- "Name": "string",
- "Description": "string",
- "Culture": "string",
- "Active": true,
- "CreatedDate": "string",
- "ModifiedDate": "string",
- "PublishDate": "string",
- "URL": "string",
- "AuthKey": "string",
- "NumberOfIntents": 0,
- "NumberOfEntities": 0,
- "IsTrained": true
-}
-   */
-
-    self.add = ({
+    self.addApp = ({
         parameters,
         body
     }) => {
@@ -49,20 +29,14 @@ const apps = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
+
     self.deleteApp = ({
         parameters,
         body,
@@ -84,18 +58,11 @@ const apps = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -120,18 +87,11 @@ const apps = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -155,40 +115,14 @@ const apps = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
-    /*
-    Sample body
-
-    {
-  "ID": "string",
-  "Name": "string",
-  "Description": "string",
-  "Culture": "string",
-  "Active": true,
-  "CreatedDate": "string",
-  "ModifiedDate": "string",
-  "PublishDate": "string",
-  "URL": "string",
-  "AuthKey": "string",
-  "NumberOfIntents": 0,
-  "NumberOfEntities": 0,
-  "IsTrained": true
-}
-    */
     self.updateApp = ({
         parameters,
         body,
@@ -210,20 +144,12 @@ const apps = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
-
     };
 
     return self;

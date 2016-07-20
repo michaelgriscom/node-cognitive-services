@@ -1,6 +1,5 @@
 const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../lib/api');
 
 const recommendations = ({
@@ -41,13 +40,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             "parameters": []
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -88,13 +86,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -145,13 +142,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -191,13 +187,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -237,13 +232,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -282,13 +276,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -317,13 +310,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             "parameters": []
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -371,13 +363,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -425,13 +416,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -479,13 +469,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -569,13 +558,12 @@ Once you have created a model, you can upload your catalog data, upload your usa
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -664,13 +652,12 @@ Note:  There is no user recommendation for an <i>FBT</i> build. If the active bu
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -709,13 +696,12 @@ Note:  There is no user recommendation for an <i>FBT</i> build. If the active bu
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -756,13 +742,12 @@ Note:  There is no user recommendation for an <i>FBT</i> build. If the active bu
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -812,13 +797,12 @@ Note:  There is no user recommendation for an <i>FBT</i> build. If the active bu
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -867,13 +851,12 @@ Note:  There is no user recommendation for an <i>FBT</i> build. If the active bu
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
 

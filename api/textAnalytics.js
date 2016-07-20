@@ -1,6 +1,5 @@
 const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../lib/api');
 
 const textAnalytics = ({
@@ -49,18 +48,11 @@ const textAnalytics = ({
             }]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
 
     };
@@ -117,18 +109,11 @@ const textAnalytics = ({
             }]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
 
     };
@@ -162,18 +147,11 @@ const textAnalytics = ({
             "parameters": []
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
 
     };
@@ -213,13 +191,12 @@ const textAnalytics = ({
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
     /**
@@ -254,18 +231,11 @@ const textAnalytics = ({
             "parameters": []
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
 
     };

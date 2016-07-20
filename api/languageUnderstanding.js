@@ -1,6 +1,5 @@
 ﻿const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../lib/api');
 
 const languageUnderstanding = ({
@@ -142,18 +141,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -203,18 +195,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -240,18 +225,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -277,18 +255,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -313,18 +284,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -370,18 +334,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -417,18 +374,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -454,18 +404,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -491,18 +434,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -527,18 +463,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
@@ -564,18 +493,11 @@ const languageUnderstanding = ({
             ]
         };
 
-        return new Promise((resolve, reject) => {
-            verifyParameters(operation, parameters)
-                .then(makeRequest({
-                    operation,
-                    parameters,
-                    body,
-                    API_KEY
-                }).then((response) => {
-                    resolve(response);
-                }).catch((err) => {
-                    reject(err);
-                }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
         });
     };
 
