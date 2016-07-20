@@ -8,12 +8,9 @@ const actionChannels = ({
     let self = this;
 
     self.actionChannels = ({
-        parameters,
-        body,
         appId
     }) => {
 
-        constructor
         operation = {
             "name": "ActionChannels",
             "path": "luis/v1.0/prog/apps/" + appId + "/actionChannels",
@@ -30,8 +27,6 @@ const actionChannels = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };

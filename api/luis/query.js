@@ -5,8 +5,7 @@
 const query = ({
     API_KEY
 }) => ({
-    parameters,
-    body
+    parameters
 }) => {
         operation = {
             "name": "Query",
@@ -52,7 +51,6 @@ const query = ({
         return verifyAndMakeRequest({
             operation,
             parameters,
-            body,
             API_KEY
         });
     };

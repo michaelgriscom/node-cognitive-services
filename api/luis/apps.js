@@ -9,11 +9,9 @@ const apps = ({
     let self = this;
 
     self.addApp = ({
-        parameters,
         body
     }) => {
 
-        constructor
         operation = {
             "name": "AddApp",
             "path": "luis/v1.0/prog/apps",
@@ -25,25 +23,20 @@ const apps = ({
                 "Host": "api.projectoxford.ai"
             },
             "parameters": [
-
             ]
         };
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
             body,
             API_KEY
         });
     };
 
     self.deleteApp = ({
-        parameters,
-        body,
         appId
     }) => {
 
-        constructor
         operation = {
             "name": "DeleteApp",
             "path": "luis/v1.0/prog/apps/" + appId,
@@ -60,19 +53,14 @@ const apps = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };
 
     self.getApp = ({
-        parameters,
-        body,
         appId
     }) => {
 
-        constructor
         operation = {
             "name": "GetApp",
             "path": "luis/v1.0/prog/apps/" + appId,
@@ -89,18 +77,13 @@ const apps = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };
 
     self.getApps = ({
-        parameters,
-        body
     }) => {
 
-        constructor
         operation = {
             "name": "GetApps",
             "path": "luis/v1.0/prog/apps",
@@ -117,19 +100,15 @@ const apps = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };
 
     self.updateApp = ({
-        parameters,
         body,
         appId
     }) => {
 
-        constructor
         operation = {
             "name": "GetApp",
             "path": "luis/v1.0/prog/apps/" + appId,
@@ -146,7 +125,6 @@ const apps = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
             body,
             API_KEY
         });

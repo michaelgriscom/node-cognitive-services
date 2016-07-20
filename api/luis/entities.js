@@ -8,12 +8,10 @@ const entities = ({
     let self = this;
 
     self.createEntityExtractor = ({
-        parameters,
         body,
         appId
     }) => {
 
-        constructor
         operation = {
             "name": "Create Entity Extractor",
             "path": "luis/v1.0/prog/apps/" + appId + "/entities",
@@ -30,20 +28,16 @@ const entities = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
             body,
             API_KEY
         });
     };
 
     self.deleteEntityModel = ({
-        parameters,
-        body,
         appId,
         entityId
     }) => {
 
-        constructor
         operation = {
             "name": "Delete Entity Model",
             "path": "luis/v1.0/prog/apps/" + appId + "/entities/" + entityId,
@@ -60,20 +54,15 @@ const entities = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };
 
     self.getEntityInfo = ({
-        parameters,
-        body,
         appId,
         entityId
     }) => {
 
-        constructor
         operation = {
             "name": "Get entity info",
             "path": "luis/v1.0/prog/apps/" + appId + "/entities/" + entityId,
@@ -90,19 +79,14 @@ const entities = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };
 
     self.getEntityInfos = ({
-        parameters,
-        body,
         appId
     }) => {
 
-        constructor
         operation = {
             "name": "Get entity infos",
             "path": "luis/v1.0/prog/apps/" + appId + "/entities",
@@ -119,20 +103,16 @@ const entities = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
-            body,
             API_KEY
         });
     };
 
     self.renameEntityModel = ({
-        parameters,
         body,
         appId,
         entityId
     }) => {
 
-        constructor
         operation = {
             "name": "Rename entity model",
             "path": "luis/v1.0/prog/apps/" + appId + "/entities/" + entityId,
@@ -149,7 +129,6 @@ const entities = ({
 
         return verifyAndMakeRequest({
             operation,
-            parameters,
             body,
             API_KEY
         });
