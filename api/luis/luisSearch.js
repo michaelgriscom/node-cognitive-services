@@ -2,7 +2,7 @@
     verifyAndMakeRequest
 } = require('../../lib/api');
 
-const search = ({
+const luisSearch = ({
     API_KEY
 }) => {
     let self = this;
@@ -10,4 +10,4 @@ const search = ({
     return self;
 };
 
-module.exports = search;
+module.exports = luisSearch;

@@ -29,9 +29,10 @@
     <Compile Include="api\luis\predict.js" />
     <Compile Include="api\luis\publish.js" />
     <Compile Include="api\luis\publishConfigurations.js" />
+    <Compile Include="api\luis\query.js" />
     <Compile Include="api\luis\queryLogs.js" />
     <Compile Include="api\luis\sample.js" />
-    <Compile Include="api\luis\search.js" />
+    <Compile Include="api\luis\luisSearch.js" />
     <Compile Include="api\luis\subscriptions.js" />
     <Compile Include="api\luis\train.js" />
     <Compile Include="api\luis\prebuilts.js" />
