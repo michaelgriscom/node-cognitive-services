@@ -1,6 +1,5 @@
 const {
-    makeRequest,
-    verifyParameters
+    verifyAndMakeRequest
 } = require('../lib/api');
 
 const bingAutosuggest = ({
@@ -17,7 +16,7 @@ const bingAutosuggest = ({
 }
 */
     self.suggestions = ({
-        parameters
+        parameters, body
     }) => {
 
         const operation = {
@@ -47,13 +46,12 @@ const bingAutosuggest = ({
             }]
         };
 
-        return verifyParameters(operation, parameters)
-            .then(makeRequest({
-                operation,
-                parameters,
-                body,
-                API_KEY
-            }));
+        return verifyAndMakeRequest({
+            operation,
+            parameters,
+            body,
+            API_KEY
+        });
 
     };
 
