@@ -6,6 +6,7 @@ const actions = ({
     API_KEY
 }) => {
     let self = this;
+    let endpoint = "/actions";
 
     self.addActionToIntent = ({
         body,
@@ -14,7 +15,7 @@ const actions = ({
 
         operation = {
             "name": "Add Action To Intent",
-            "path": "luis/v1.0/prog/apps/" + appId + "/actions",
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint,
             "host": "api.projectoxford.ai",
             "method": "POST",
             "scheme": "https",
@@ -40,7 +41,7 @@ const actions = ({
 
         operation = {
             "name": "Delete Action",
-            "path": "luis/v1.0/prog/apps/" + appId + "/actions/" + actionId,
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint + "/" + actionId,
             "host": "api.projectoxford.ai",
             "method": "DELETE",
             "scheme": "https",
@@ -65,7 +66,7 @@ const actions = ({
 
         operation = {
             "name": "Get Application Action",
-            "path": "luis/v1.0/prog/apps/" + appId + "/actions/" + actionId,
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint + "/" + actionId,
             "host": "api.projectoxford.ai",
             "method": "GET",
             "scheme": "https",
@@ -89,7 +90,7 @@ const actions = ({
 
         operation = {
             "name": "Get Application Action",
-            "path": "luis/v1.0/prog/apps/" + appId + "/actions",
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint,
             "host": "api.projectoxford.ai",
             "method": "GET",
             "scheme": "https",
@@ -115,7 +116,7 @@ const actions = ({
 
         operation = {
             "name": "Update Action",
-            "path": "luis/v1.0/prog/apps/" + appId + "/actions/" + actionId,
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint + "/" + actionId,
             "host": "api.projectoxford.ai",
             "method": "PUT",
             "scheme": "https",

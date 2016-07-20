@@ -6,6 +6,7 @@ const entities = ({
     API_KEY
 }) => {
     let self = this;
+    let endpoint = "/entities";
 
     self.createEntityExtractor = ({
         body,
@@ -14,7 +15,7 @@ const entities = ({
 
         operation = {
             "name": "Create Entity Extractor",
-            "path": "luis/v1.0/prog/apps/" + appId + "/entities",
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint,
             "host": "api.projectoxford.ai",
             "method": "POST",
             "scheme": "https",
@@ -40,7 +41,7 @@ const entities = ({
 
         operation = {
             "name": "Delete Entity Model",
-            "path": "luis/v1.0/prog/apps/" + appId + "/entities/" + entityId,
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint + "/" + entityId,
             "host": "api.projectoxford.ai",
             "method": "DELETE",
             "scheme": "https",
@@ -65,7 +66,7 @@ const entities = ({
 
         operation = {
             "name": "Get entity info",
-            "path": "luis/v1.0/prog/apps/" + appId + "/entities/" + entityId,
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint + "/" + entityId,
             "host": "api.projectoxford.ai",
             "method": "GET",
             "scheme": "https",
@@ -89,7 +90,7 @@ const entities = ({
 
         operation = {
             "name": "Get entity infos",
-            "path": "luis/v1.0/prog/apps/" + appId + "/entities",
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint,
             "host": "api.projectoxford.ai",
             "method": "GET",
             "scheme": "https",
@@ -115,7 +116,7 @@ const entities = ({
 
         operation = {
             "name": "Rename entity model",
-            "path": "luis/v1.0/prog/apps/" + appId + "/entities/" + entityId,
+            "path": "luis/v1.0/prog/apps/" + appId + endpoint + "/" + entityId,
             "host": "api.projectoxford.ai",
             "method": "GET",
             "scheme": "https",
